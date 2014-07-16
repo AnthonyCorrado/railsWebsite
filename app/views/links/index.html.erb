@@ -1,0 +1,21 @@
+
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+	<title>project5</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js" type="text/javascript"></script>
+</head>
+<body ng-app="WebDesignz">
+	<div id="container" ng-controller="MainController">
+			<div id="topnav">project5</div>
+			<div class="pic-box"></div>
+			<!-- <div class="pic-box2"></div>
+			<div class="pic-box3"></div>
+			<div class="pic-box4"></div> -->
+				<div id="nav-items-container">
+					<div class="info-box" ng-repeat="item in navItems">
+						<h1 class="menu-text">{{item}}</h1>
+					</div>
+				</div>
+				<div class="boxes" ng-repeat="square in squares"></div>
+	</div>
+</body>
